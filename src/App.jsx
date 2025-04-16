@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login";
 import RegisterPage from "./Pages/RegisterPage";
 import RegisterPage2 from "./Pages/RegisterPage2";
@@ -22,39 +22,38 @@ import "./App.css"
 
 function App() {
   return (
-    <Router>
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/RegisterPage" element={<RegisterPage />} />
-          <Route path="/RegisterPage2" element={<RegisterPage2 />} />
-          <Route path="/RegisterPage3" element={<RegisterPage3 />} />
-          <Route path="/RegisterPage4" element={<RegisterPage4 />} />
-          <Route path="/RegisterPage5" element={<RegisterPage5 />} />
-          <Route path="/RegisterPage6" element={<RegisterPage6 />} />
-          <Route path="/RegisterPage7" element={<RegisterPage7 />} />
-          <Route path="/RegisterPage8" element={<RegisterPage8 />} />
-          <Route
-          path="/profile"
-          element={
-            <div className="profile-page-container">
-              <div className="card-section">
-                <ProfileCard />
-                <DailyReport />
-              </div>
-              <div style={{ marginTop: '2rem' }}>
-                <WeightTracking />
-              </div>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/RegisterPage" element={<RegisterPage />} />
+      <Route path="/RegisterPage2" element={<RegisterPage2 />} />
+      <Route path="/RegisterPage3" element={<RegisterPage3 />} />
+      <Route path="/RegisterPage4" element={<RegisterPage4 />} />
+      <Route path="/RegisterPage5" element={<RegisterPage5 />} />
+      <Route path="/RegisterPage6" element={<RegisterPage6 />} />
+      <Route path="/RegisterPage7" element={<RegisterPage7 />} />
+      <Route path="/RegisterPage8" element={<RegisterPage8 />} />
+      <Route
+        path="/profile"
+        element={
+          <div className="profile-page-container">
+            <div className="card-section">
+              <ProfileCard />
+              <DailyReport />
             </div>
-          }
-        />
-        <Route path="/Dashboard" element={<Dashboard />}/>
-        <Route path="/Training" element={<Training />} />
-        <Route path="/Activity" element={<Activity />} />
-        <Route path="/LandingPage" element={<LandingPage />} />
-        <Route path="/SupportCenter" element={<SupportCenter />} />
-      </Routes>
-    </Router>
+            <div style={{ marginTop: '2rem' }}>
+              <WeightTracking />
+            </div>
+          </div>
+        }
+      />
+      <Route path="/Dashboard" element={<Dashboard />} />
+      <Route path="/Training" element={<Training />} />
+      <Route path="/Activity" element={<Activity />} />
+      <Route path="/LandingPage" element={<LandingPage />} />
+      <Route path="/SupportCenter" element={<SupportCenter />} />
+    </Routes>
   );
 }
+
 
 export default App;
