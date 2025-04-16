@@ -1,0 +1,94 @@
+.profile-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    width: 100%;
+    align-self: center;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .profile-name {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .go-premium {
+    background-color: #7b35c8;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  .go-premium:hover{
+    background-color: gray;
+  }
+  
+  .profile-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .stat-box {
+    background-color: #f6f6f6;
+    padding: 10px;
+    border-radius: 12px;
+    flex: 1;
+    margin: 0 5px;
+  }
+
+  .stat-box:hover{
+    background-color: #7b35c8;
+  }
+  
+  .stat-box p {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .stat-box span {
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .profile-info {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 2%;
+  }
+
+  .profile-info span{
+    color: gray;
+    padding-left: 51%;
+    }
+ 
+  .setting a{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+    margin-top: 2%;
+  }
+  .setting a:hover{
+    color: #7b35c8;
+  }

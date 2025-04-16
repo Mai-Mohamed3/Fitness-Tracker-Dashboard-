@@ -1,0 +1,28 @@
+.profile-page-container {
+    padding: 20px;
+    background-color: #f1f5f9;
+    max-height: 500vh;
+    height: 100%;
+  }
+  
+  .card-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  @media (min-width: 1024px) {
+    .card-section {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .profile-card, .daily-report {
+      flex: 1;
+      max-width: 800px;
+      width: 100%;
+      align-self: center;
+      padding: 50px;
+    }
+  }
+  

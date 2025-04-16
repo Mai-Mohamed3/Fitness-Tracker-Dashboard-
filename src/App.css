@@ -1,0 +1,20 @@
+/* الأساسيات */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* خلفية المسار */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #7b35c8; /* لون السكرول */
+    border-radius: 6px;
+    border: 1px solid #f1f1f1;
+  }
+  
+  /* عند تمرير الماوس */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #357ca5;
+  }
+  
